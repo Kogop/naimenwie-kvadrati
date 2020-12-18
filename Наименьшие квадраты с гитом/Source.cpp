@@ -35,6 +35,6 @@ int main() {
 	//cout << X << "   " << Y << endl;
 
 	
-	//tururu
+
 	return 1;
 }
