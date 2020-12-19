@@ -7,7 +7,7 @@ using namespace std;
 double x[10] = { 10,30,40,70,90,110,130,140,150,160 };
 double y[10] = { 4.5,4.8,5.1,6,7.5,8.1,9,9.8,11.3,14 };
 int Speed = 175, n = 10, m = 2;
-double X, Y, X2, XY, b, k, yRas4etnoe[10], Sigma[10], Sigma2[10],S;
+double X, Y, X2, XY, b, k, yRas4etnoe[10], Sigma[10], Sigma2[10], S, Otvet;
 
 double RewenieSLAU(double X, double Y, double X2, double XY) {
 
@@ -15,7 +15,7 @@ double RewenieSLAU(double X, double Y, double X2, double XY) {
 	b = Y / (n + X * -X / X2);
 	k = (XY - b * X) / X2;
 
-	cout << b << "  " << k << endl;
+	cout << k << "  " << b << endl;
    
    
 
@@ -48,6 +48,8 @@ int main() {
 	}
 	
 	cout << S << endl;
+	Otvet = k * Speed + b;
+	cout << Otvet << endl;
 
 	return 1;
 }
